@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        🎂 Love Story Quiz - วันเกิดของแฟนน
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="floating-emojis">
+        <div class="floating-emoji">💖</div>
+        <div class="floating-emoji">🎂</div>
+        <div class="floating-emoji">💕</div>
+        <div class="floating-emoji">🎉</div>
+        <div class="floating-emoji">💝</div>
+        <div class="floating-emoji">🎈</div>
+        <div class="floating-emoji">✨</div>
+        <div class="floating-emoji">🌟</div>
+        <div class="floating-emoji">💫</div>
+        <div class="floating-emoji">🎁</div>
+    </div>
+    <div class="container">
+        <div class="game-card start-screen" id="startScreen">
+            <h1>💕 Love Story Quiz 💕</h1>
+            <p class="subtitle">เกมตอบคำถามพิเศษสำหรับวันเกิดของคนพิเศษ</p>
+            <div class="hearts">💖For You💖</div>
+            <p style="margin: 20px 0; font-size: 1.1rem;">มาทดสอบความจำเกี่ยวกับเรื่องราวดีๆ ของเราสองคนกันเถอะ!😺</p>
+            <button class="btn" onclick="startGame()">เริ่มเกม!</button>
+        </div>
+
+        <div class="game-card question-screen" id="questionScreen">
+            <div class="question-counter" id="questionCounter"></div>
+            <img class="question-image" id="questionImage" src="https://via.placeholder.com/200x200/ff6b6b/ffffff?text=❤️" alt="Memory">
+            <div class="question-text" id="questionText"></div>
+            <div class="options" id="options"></div>
+            <div class="story-text hidden" id="storyText"></div>
+            <button class="btn next-btn hidden" id="nextBtn" onclick="nextQuestion()">คำถามต่อไป</button>
+        </div>
+
+        <div class="game-card final-screen" id="finalScreen">
+            <h1>🎉 Happy Birthday! 🎂</h1>
+            <div class="score" id="finalScore"></div>
+            <div class="final-message">
+                <p>🌟 ไม่ว่าจะตอบได้กี่ข้อ แฟนก็ยังคงเป็นคนที่พิเศษที่สุดในใจเค้าเสมอ 🌟</p>
+                <br>
+                <p>💝 ขอให้วันเกิดปีนี้เต็มไปด้วยความสุข เสียงหัวเราะ และความฝันที่เป็นจริงนะแฟน</p>
+                <br>
+                <p>🎈 เค้ารักแฟนมากที่สุดในโลก! 🎈</p>
+            </div>
+            <div class="hearts">💖🎂🎉🎁💖</div>
+            <button class="btn" onclick="restartGame()">เล่นอีกครั้ง 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
